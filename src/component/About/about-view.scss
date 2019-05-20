@@ -1,0 +1,92 @@
+@import "../../asset/scss/base";
+@import "../../asset/scss/variable";
+
+.section-about {
+  padding: 72px 100px;
+  padding-bottom: 0;
+  height: auto;
+  @media (max-width: 1024px) {
+    padding: 50px 10px;
+    padding-bottom: 0;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .heroname {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .herorole {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+  }
+
+  .signature {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .line {
+    border-bottom: 2px dashed #232323;
+    margin-bottom: -12px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &:before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background-color: white;
+      border: 4px solid $primary-color;
+      border-radius: 50%;
+      position: absolute;
+      left: -18px;
+      bottom: -7px;
+    }
+
+    &:after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background-color: white;
+      border: 4px solid $primary-color;
+      border-radius: 50%;
+      position: absolute;
+      right: -18px;
+      bottom: -7px;
+    }
+  }
+
+  .personal-info {
+    margin-bottom: 14px;
+    color: #555;
+  }
+
+  .title--role {
+    margin: 50px 0px;
+  }
+
+  .role {
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    padding: 50px 0px;
+
+    .roleicon {
+      font-size: 72px;
+    }
+
+    .rolename {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}

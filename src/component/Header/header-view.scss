@@ -50,6 +50,11 @@
           border-bottom: 5px solid transparent;
           box-sizing: content-box;
           cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
         }
 
         li:hover {
