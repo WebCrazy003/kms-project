@@ -1,10 +1,12 @@
-@import "../../asset/scss/base";
-@import "../../asset/scss/variable";
+@import "../../scss/base";
+@import "../../scss/variable";
 
 .section-about {
   padding: 72px 100px;
   padding-bottom: 0;
   height: auto;
+  text-align: left;
+
   @media (max-width: 1024px) {
     padding: 50px 10px;
     padding-bottom: 0;
@@ -73,6 +75,10 @@
 
   .title--role {
     margin: 50px 0px;
+  }
+
+  .role-category {
+    margin-bottom: 30px;
   }
 
   .role {

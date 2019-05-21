@@ -1,0 +1,20 @@
+body {
+  margin: 0px !important;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0 !important;
+}
+
+.section-img {
+  max-height: 650px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .section-img {
+    max-height: 256px;
+    margin: 0 auto;
+    display: block;
+  }
+}

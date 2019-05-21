@@ -1,11 +1,10 @@
-@import "../../asset/scss/base";
+@import "../../scss/base";
 
 .section-home {
   padding: 72px 100px;
   padding-bottom: 0;
   height: auto;
-  float: left;
-  background: white;
+  background: transparent;
   @media (max-width: 1024px) {
     padding: 50px 10px;
     padding-bottom: 0;
@@ -19,6 +18,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    text-align: left;
     @media (max-width: 1024px) {
       flex-direction: column;
     }
