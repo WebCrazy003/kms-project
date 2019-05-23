@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './index.scss';
+import '../../style/component';
 
 export default class HeaderTab extends React.Component {
   render() {

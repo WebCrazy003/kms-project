@@ -1,12 +1,14 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import './index.scss';
-import '../HeaderTab';
-import HeaderTab from '../HeaderTab';
+import '../../style/component';
+import '../headerTab';
+import HeaderTab from '../headerTab';
 
 class Header extends React.Component {
   render() {
     const currentPath = window.location.pathname;
+    const { onClick } = this.props;
+
     return (
       <header className="header">
         <div className="header__bottom">
@@ -52,9 +54,12 @@ class Header extends React.Component {
             </ul>
 
             <div className="header__action-button-wrapper">
-              <a className="header__action-button">
+              <button
+                className="header__action-button"
+                onClick={() => onClick(100)}
+              >
                 <i className="icon ion-md-add" />
-              </a>
+              </button>
             </div>
           </nav>
         </div>

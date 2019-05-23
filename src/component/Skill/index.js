@@ -1,8 +1,12 @@
 import React from 'react';
-import './index.scss';
+import '../../style/component';
 
 export default class Skill extends React.Component {
   render() {
+    const {
+      skill: { wordpress, photoshop },
+    } = this.props;
+
     return (
       <section id="section-skill" className="section section--skill">
         <h3 className="section-title">MY SKILLS VALUES</h3>
@@ -11,16 +15,32 @@ export default class Skill extends React.Component {
           <div className="skill-progress">
             <span className="skill-name">wordpress</span>
             <div className="progress-bar progress-bar--grey">
-              <div className="progress-bar progress-bar--value1" />
-              <span className="progress-marker marker-value1">85%</span>
+              <div
+                className="progress-bar progress-bar--value1"
+                style={{ width: wordpress + '%' }}
+              />
+              <span
+                className="progress-marker progress-bar--transition"
+                style={{ left: wordpress + '%' }}
+              >
+                {wordpress + '%'}
+              </span>
             </div>
           </div>
 
           <div className="skill-progress">
             <span className="skill-name">photoshop</span>
             <div className="progress-bar progress-bar--grey">
-              <div className="progress-bar progress-bar--value2" />
-              <span className="progress-marker marker-value2">99%</span>
+              <div
+                className="progress-bar progress-bar--value2"
+                style={{ width: photoshop + '%' }}
+              />
+              <span
+                className="progress-marker progress-bar--transition"
+                style={{ left: photoshop + '%' }}
+              >
+                {photoshop + '%'}
+              </span>
             </div>
           </div>
 
